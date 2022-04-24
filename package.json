@@ -1,0 +1,23 @@
+{
+  "name": "node-",
+  "version": "1.0.0",
+  "description": "",
+  "main": "1-first_node.js",
+  "dependencies": {
+    "lodash": "^4.17.21"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ashwin1321/nodejs.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ashwin1321/nodejs/issues"
+  },
+  "homepage": "https://github.com/ashwin1321/nodejs#readme"
+}
