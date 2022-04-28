@@ -1,8 +1,8 @@
 // http module  --  setting the web server   
 
-const  http = require('http');
+import { createServer } from 'http';
 
-const server = http.createServer((req,res)=>{
+const server = createServer((req,res)=>{
     // console.log(req);
     if (req.url==='/')
     {

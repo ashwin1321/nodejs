@@ -10,9 +10,9 @@
 // installing other dependencies npm creates a folder node_modules which has all the dependencies inside 
 // uninstall the dependencies by running --  npm uninstall <package name>
 
-const _ = require('lodash');
+import { flattenDeep } from 'lodash';
 
 const item = [1,[2,[3,[4]]]];
-const newitem = _.flattenDeep(item);
+const newitem = flattenDeep(item);
 console.log(newitem);
 // test
