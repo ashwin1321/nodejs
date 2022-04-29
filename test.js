@@ -1,18 +1,23 @@
-// creating the package
+const {readFile} = require('fs')
 
-// npm init -- step by step process
-// npm init -y   -- shortcut
 
-//installing package locally ---npm i <packagename> 
-//installing package globally ---npm install -g <packagename> 
-//installing package as dev developer ---npm i <packagename> -D
+const getText = (path) =>{
+    // promise has 2 parameters resolve and reject/
+    return new Promise((resolve, reject)=> {
+        readFile(path,'utf8', (err,data) =>{
+            if(err){
+                reject()
+            }
+            else{
+                resolve(data)
+            }
+        })
 
-// installing other dependencies npm creates a folder node_modules which has all the dependencies inside 
-// uninstall the dependencies by running --  npm uninstall <package name>
+    })
+}
 
-import { flattenDeep } from 'lodash';
+getText('./content/first.txt')
+    .then(result => console.log(result))
+    .catch(err => console.log(err))
 
-const item = [1,[2,[3,[4]]]];
-const newitem = flattenDeep(item);
-console.log(newitem);
-// test
+
