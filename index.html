@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Home page</h1>
+    <h4>Hello World</h4>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Perspiciatis, corporis minima tempora vero eveniet excepturi quia vel saepe necessitatibus numquam ipsum modi maxime dolor blanditiis id ab illo facilis harum nobis quae?</p>
+    <div>
+        <ul><li>1</li>
+        <li>2</li>
+        <li>3</li>
+        <li>5</li></ul>
+    </div>
+    
+</body>
+
+</html>
+
+
+
+<!-- // yesko node file
+
+const http = require('http');
+const {readFileSync} = require('fs');
+
+// get all files
+const homePage = readFileSync('./index.html');
+const server = http.createServer((req, res) => {
+  res.writeHead(200, {'Content-Type': 'text/html'});
+  res.end(homePage);
+});
+
+server.listen(5000);-->
