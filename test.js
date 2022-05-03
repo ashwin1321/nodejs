@@ -1,11 +1,9 @@
-const http = require('http');
-const {readFileSync} = require('fs');
+const express = require('express')
 
-// get all files
-const homePage = readFileSync('./index.html');
-const server = http.createServer((req, res) => {
-  res.writeHead(200, {'Content-Type': 'text/html'});
-  res.end(homePage);
-});
+const app = express()
 
-server.listen(5000);
+app.get('/', (req, res) => {
+  res.send('Hello World')
+})
+
+app.listen(5000)
