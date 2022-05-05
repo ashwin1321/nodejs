@@ -7,6 +7,8 @@ app.use(express.static('../public')) // serve static files from public folder   
 
 // app.get('/', (req, res) => {
 //   res.sendFile(path.resolve(__dirname, '../navbar app/index.html')) // sending html files
+// adding to static assests
+// server side rendering
 // })
 
 app.all('*', (req, res) => {
